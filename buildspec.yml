@@ -7,7 +7,12 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - node app.js
+      - node src/app.js
   post_build:
     commands:
       - echo Build completed on `date`
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: src
