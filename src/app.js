@@ -11,3 +11,4 @@
 
 
 console.log('Hello from different World');
+console.log('environment variable from yml file '+ process.env.myname);
